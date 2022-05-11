@@ -52,3 +52,36 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function changeImage() {
+    if (document.getElementById("sbpictures").src == "http://127.0.0.1:5500/dist/assets/img/sb.jpeg"){
+        document.getElementById("sbpictures").src = "http://127.0.0.1:5500/dist/assets/img/sb2.jpeg";
+    } else {
+        document.getElementById("sbpictures").src = "http://127.0.0.1:5500/dist/assets/img/sb.jpeg";
+    }
+}
+
+function fadeImage() {
+    var element = document.getElementById("sbpictures");
+    element.classList.toggle('fade');
+    setTimeout(() => {element.classList.toggle('fade')}, 300);
+    
+}
+
+//Memory-game
+
+const cards = document.querySelectorAll('.memory-card');
+
+let hasFlippedCard = false;
+let firstCard, secondCard;
+
+function flipCard() {
+    this.classList.add('flip');
+
+    if (!hasFlippedCard) {
+      hasFlippedCard = true;
+      firstCard = this;
+    }
+}
+
+cards.forEach(card => card.addEventListener('click', flipCard));
