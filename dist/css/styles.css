@@ -11703,7 +11703,7 @@ body {
 
 .memory-game-container {
   background-color: rgba(0, 0, 0, 1);
-  height: 1000px
+  height: 800px;
 }
 
 .memory-game {
@@ -11735,10 +11735,10 @@ body {
 .back-face {
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 15px;
   position: absolute;
   border-radius: 5px;
-  background: #1C7CCC;
+  background: linear-gradient(to bottom, rgba(200, 200, 200, 0.8) 0%, rgba(100, 100, 100, 0.9) 50%, rgba(200, 200, 200, 0.8) 100%);
   backface-visibility: hidden;
 }
 
@@ -11765,21 +11765,4 @@ body {
   display: round;
   max-width: 100%;
   height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right:0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.image-container:hover .overlay {
-  opacity: 0.5;
 }
