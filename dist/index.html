@@ -26,7 +26,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#qualifications">Qualifications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#memory-game">Skills/Hobbies</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
                     </ul>
@@ -38,21 +39,71 @@
             <div class="image-container px-4 px-lg-5 d-flex flex-column h-100 align-items-center justify-content-center">
                 <div class="justify-content-center">
                     <button style="background-color: transparent; border:none;" class="mb-4" onclick="changeImage(); fadeImage()">
-                        <img class="image rounded-circle" style=" max-block-size: 400px;" src="assets/img/sb.jpeg" id="sbpictures"/>
+                        <img class="sb-image rounded-circle" style=" max-block-size: 400px;" src="assets/img/sb.jpeg" id="sbpictures"/>
                     </button>
                 </div>
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Sandil Bhikha</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-4" style="width:100%" >BSc Data Science & Accounting (Graduated 12/21)</h2>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-4">MSc Artificial Intellgence (Expected 06/24)</h2>
-                        <a class="btn btn-primary" href="#memory-game">Ooh a button!</a>
+                        <h1 class="mx-auto my-0 mb-5 text-uppercase">Sandil Bhikha</h1>
+                        <h2 class="text-white-50 mx-auto my-0 mb-5">Welcome to my digital CV!</h2>
+                        <a class="btn btn-primary mb-3" href="#contact">Contact Me</a>
                     </div>
                 </div>
             </div>
         </header>
+        <!-- Qualifications-->
+        <section class="about-section text-center pt-0" id="qualifications">
+            <h1 class="mx-auto text-white mb-5">Qualifications</h1>
+            <div class="image-container px-4 px-lg-5 h-100" >
+                <div class="row align-items-center">
+                    <div class="col mb-5 align-items-center" >
+                        <a href="https://www.stithian.com/boys-college">
+                            <img class="qual-image mb-lg-5" src="assets/img/saints_badge.jpeg">
+                        </a>
+                        <h3 class="text-white mb-3">High-School</h3>
+                        <h4 class="text-white mb-5">Graduated 2018</h4>
+                        <a class="btn btn-primary" href="#assets/Documents/sbresume.pdf" type="application/pdf" target="_blank">View Certificate</a>
+                    </div>
+                    <div class="col mb-5 align-items-center" >
+                        <a href="https://www.uwa.edu.au/About-us/Rankings-reputation">
+                            <img class="qual-image mb-lg-5" src="assets/img/university-of-western-australia-logo.png">
+                        </a>
+                        <h3 class="text-white mb-1">Bachelor's Degree</h3>
+                        <h4 class="text-white mb-3">Double Major</h4>
+                        <h4 class="text-white mb-5">Graduated 2021</h4>
+                        <ul class="text-white mb-4">
+                            <a href="https://year2020.handbooks.uwa.edu.au/majordetails?code=MJD-DATSC#dsmlevel1" style="text-decoration: none;"><li> BSc Data Science</li></a>
+                            <a href="https://year2019.handbooks.uwa.edu.au/majordetails?code=MJD-ACCTG" style="text-decoration: none;"><li>BCom Accounting</li></a>
+                        </ul>
+                        <a class="btn btn-primary mb-3" href="#assets/Documents/sbresume.pdf" type="application/pdf" target="_blank">View Certificate</a>
+                        <a class="btn btn-primary" href="#assets/Documents/sbresume.pdf" type="application/pdf" target="_blank">View Results</a>
+                    </div>
+                    <div class="col mb-5 align-items-center" >
+                        <a href="https://online.liverpool.ac.uk/programmes/msc-artificial-intelligence/">
+                            <img class="qual-image mb-lg-5" src="assets/img/university_liverpool_logo.jpg">
+                        </a>
+                        <h3 class="text-white mb-1">Master's Degree</h3>
+                        <h4 class="text-white mb-3">Currently pursuing</h4>
+                        <h4 class="text-white mb-5">Expected 2024</h4>
+                        <a href="https://online.liverpool.ac.uk/programmes/msc-artificial-intelligence/" style="text-decoration: none;"><p class="mb-5">MSc Artificial Intelligence</p></a>
+                        <a class="btn btn-primary" href="#assets/Documents/sbresume.pdf" type="application/pdf" target="_blank">View Certificate</a>
+                    </div>
+                    <div class="col mb-5 align-items-center" >
+                        <a href="https://online.liverpool.ac.uk/programmes/msc-artificial-intelligence/">
+                            <img class="qual-image mb-lg-5" src="assets/img/university_liverpool_logo.jpg">
+                        </a>
+                        <h3 class="text-white mb-3">Online Courses</h3>
+                        <ul class="text-white mb-4">
+                            <li>Data Science</li>
+                            <li>Accounting</li>
+                        </ul>
+                        <a class="btn btn-primary" href="#assets/Documents/sbresume.pdf" type="application/pdf" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Memory game-->
-        <section class="memory-game-container justify-content-center mb-0" id="memory-game">
+        <section class="memory-game-container justify-content-center mb-0 pt-5" id="memory-game">
             <div class="text-center"> 
                 <h1 class="mx-auto text-uppercase text-white mb-3">Let's play a game...</h1>
                 <h2 class="text-white-50 mx-auto mt-2 mb-5"> Flip cards to find out some of my skills, interests and hobbies</h2>
@@ -108,32 +159,18 @@
                 </div>
             </div>
         </section>
-        <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Qualifications</h2>
-                        <p class="text-white-50">
-                            Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                            <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
-                            The theme is open source, and you can use it for any purpose, personal or commercial.
-                        </p>
-                    </div>
-                </div>
-                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
-            </div>
-        </section>
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
-            <div class="container px-4 px-lg-5">
+            <div class="container px-4 px-lg-5 m-0">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                            <div>
+                                <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -249,7 +286,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="social d-flex justify-content-center">
+                <div class="social d-flex justify-content-center" id="contact">
                     <a class="mx-2" href="https://www.linkedin.com/in/sandil-bhikha/"><i class="fab fa-linkedin"></i></a>
                     <a class="mx-2" href="https://github.com/sbhikha"><i class="fab fa-github"></i></a>
                     <a class="mx-2" href="https://www.kaggle.com/sandilbhikha"><i class="fab fa-kaggle"></i></a>

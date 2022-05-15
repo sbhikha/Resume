@@ -11702,14 +11702,14 @@ body {
 /*Memory-game*/
 
 .memory-game-container {
-  background-color: rgba(0, 0, 0, 1);
-  height: 800px;
+  background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  height: 1200px;
 }
 
 .memory-game {
-  background-color: rgba(0, 0, 0, 1);
-  width: 640px;
-  height: 640px;
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  width: 900px;
+  height: 900px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -11738,7 +11738,7 @@ body {
   padding: 15px;
   position: absolute;
   border-radius: 5px;
-  background: linear-gradient(to bottom, rgba(200, 200, 200, 0.8) 0%, rgba(100, 100, 100, 0.9) 50%, rgba(200, 200, 200, 0.8) 100%);
+  background: linear-gradient(to bottom, rgba(150, 150, 150, 0.8) 0%, rgba(100, 100, 100, 0.9) 50%, rgba(150, 150, 150, 0.8) 100%);
   backface-visibility: hidden;
 }
 
@@ -11750,7 +11750,7 @@ body {
   transform: rotateY(180deg);
 }
 
-/*Image*/ 
+/*Images*/ 
 
 .image-container {
   position: relative;
@@ -11761,8 +11761,13 @@ body {
   margin-left: auto;
 }
 
-.image {
+.sb-image {
   display: round;
   max-width: 100%;
+  height: auto;
+}
+
+.qual-image {
+  max-width: 50%;
   height: auto;
 }
